@@ -40,6 +40,7 @@
 |  [getEsPreference(uiSettings, sessionId)](./kibana-plugin-plugins-data-public.getespreference.md) |  |
 |  [getQueryLog(uiSettings, storage, appName, language)](./kibana-plugin-plugins-data-public.getquerylog.md) |  |
 |  [getSearchErrorType({ message })](./kibana-plugin-plugins-data-public.getsearcherrortype.md) |  |
+|  [getSearchParamsFromRequest(searchRequest, dependencies)](./kibana-plugin-plugins-data-public.getsearchparamsfromrequest.md) |  |
 |  [getTime(indexPattern, timeRange, options)](./kibana-plugin-plugins-data-public.gettime.md) |  |
 |  [plugin(initializerContext)](./kibana-plugin-plugins-data-public.plugin.md) |  |
 
@@ -67,7 +68,6 @@
 |  [IndexPatternTypeMeta](./kibana-plugin-plugins-data-public.indexpatterntypemeta.md) |  |
 |  [IRequestTypesMap](./kibana-plugin-plugins-data-public.irequesttypesmap.md) |  |
 |  [IResponseTypesMap](./kibana-plugin-plugins-data-public.iresponsetypesmap.md) |  |
-|  [ISearchContext](./kibana-plugin-plugins-data-public.isearchcontext.md) |  |
 |  [ISearchOptions](./kibana-plugin-plugins-data-public.isearchoptions.md) |  |
 |  [ISearchStrategy](./kibana-plugin-plugins-data-public.isearchstrategy.md) | Search strategy interface contains a search method that takes in a request and returns a promise that resolves to a response. |
 |  [ISyncSearchRequest](./kibana-plugin-plugins-data-public.isyncsearchrequest.md) |  |
@@ -101,16 +101,20 @@
 |  [esFilters](./kibana-plugin-plugins-data-public.esfilters.md) |  |
 |  [esKuery](./kibana-plugin-plugins-data-public.eskuery.md) |  |
 |  [esQuery](./kibana-plugin-plugins-data-public.esquery.md) |  |
+|  [extractSearchSourceReferences](./kibana-plugin-plugins-data-public.extractsearchsourcereferences.md) |  |
 |  [fieldFormats](./kibana-plugin-plugins-data-public.fieldformats.md) |  |
 |  [FilterBar](./kibana-plugin-plugins-data-public.filterbar.md) |  |
 |  [getIndexPatternFieldListCreator](./kibana-plugin-plugins-data-public.getindexpatternfieldlistcreator.md) |  |
 |  [getKbnTypeNames](./kibana-plugin-plugins-data-public.getkbntypenames.md) | Get the esTypes known by all kbnFieldTypes {<!-- -->Array<string>} |
 |  [indexPatterns](./kibana-plugin-plugins-data-public.indexpatterns.md) |  |
+|  [injectSearchSourceReferences](./kibana-plugin-plugins-data-public.injectsearchsourcereferences.md) |  |
+|  [parseSearchSourceJSON](./kibana-plugin-plugins-data-public.parsesearchsourcejson.md) |  |
 |  [QueryStringInput](./kibana-plugin-plugins-data-public.querystringinput.md) |  |
 |  [search](./kibana-plugin-plugins-data-public.search.md) |  |
 |  [SearchBar](./kibana-plugin-plugins-data-public.searchbar.md) |  |
 |  [SYNC\_SEARCH\_STRATEGY](./kibana-plugin-plugins-data-public.sync_search_strategy.md) |  |
 |  [syncQueryStateWithUrl](./kibana-plugin-plugins-data-public.syncquerystatewithurl.md) | Helper to setup syncing of global data with the URL |
+|  [UI\_SETTINGS](./kibana-plugin-plugins-data-public.ui_settings.md) |  |
 
 ## Type Aliases
 
@@ -153,5 +157,4 @@
 |  [TabbedAggRow](./kibana-plugin-plugins-data-public.tabbedaggrow.md) | \* |
 |  [TimefilterContract](./kibana-plugin-plugins-data-public.timefiltercontract.md) |  |
 |  [TimeHistoryContract](./kibana-plugin-plugins-data-public.timehistorycontract.md) |  |
-|  [TSearchStrategyProvider](./kibana-plugin-plugins-data-public.tsearchstrategyprovider.md) | Search strategy provider creates an instance of a search strategy with the request handler context bound to it. This way every search strategy can use whatever information they require from the request context. |
 

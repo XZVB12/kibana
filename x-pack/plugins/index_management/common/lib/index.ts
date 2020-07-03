@@ -4,12 +4,14 @@
  * you may not use this file except in compliance with the Elastic License.
  */
 
-export { deserializeDataStreamList } from './data_stream_serialization';
+export { deserializeDataStream, deserializeDataStreamList } from './data_stream_serialization';
 
 export {
-  deserializeLegacyTemplateList,
+  deserializeTemplate,
   deserializeTemplateList,
   deserializeLegacyTemplate,
+  deserializeLegacyTemplateList,
+  serializeTemplate,
   serializeLegacyTemplate,
 } from './template_serialization';
 

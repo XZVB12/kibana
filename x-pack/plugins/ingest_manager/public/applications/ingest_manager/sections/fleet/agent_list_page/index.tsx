@@ -236,7 +236,7 @@ export const AgentListPage: React.FunctionComponent<{}> = () => {
     },
     {
       field: 'active',
-      width: '100px',
+      width: '120px',
       name: i18n.translate('xpack.ingestManager.agentList.statusColumnTitle', {
         defaultMessage: 'Status',
       }),
@@ -489,6 +489,7 @@ export const AgentListPage: React.FunctionComponent<{}> = () => {
       <EuiSpacer size="m" />
       <EuiBasicTable<Agent>
         className="fleet__agentList__table"
+        data-test-subj="fleetAgentListTable"
         loading={isLoading && agentsRequest.isInitialRequest}
         hasActions={true}
         noItemsMessage={

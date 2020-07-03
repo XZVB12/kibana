@@ -36,7 +36,7 @@ export const searchSavedObjectType: SavedObjectsType = {
     },
     getInAppUrl(obj) {
       return {
-        path: `/app/discover#/${encodeURIComponent(obj.id)}`,
+        path: `/app/discover#/view/${encodeURIComponent(obj.id)}`,
         uiCapabilitiesPath: 'discover.show',
       };
     },
@@ -56,5 +56,5 @@ export const searchSavedObjectType: SavedObjectsType = {
       version: { type: 'integer' },
     },
   },
-  migrations: searchSavedObjectTypeMigrations,
+  migrations: searchSavedObjectTypeMigrations as any,
 };

@@ -250,4 +250,22 @@ export const routes: BreadcrumbRoute[] = [
     }),
     name: RouteName.CUSTOMIZE_UI,
   },
+  {
+    exact: true,
+    path: '/rum-overview',
+    component: () => <Home tab="rum-overview" />,
+    breadcrumb: i18n.translate('xpack.apm.home.rumOverview.title', {
+      defaultMessage: 'Real User Monitoring',
+    }),
+    name: RouteName.RUM_OVERVIEW,
+  },
+  {
+    exact: true,
+    path: '/services/:serviceName/rum-overview',
+    component: () => <ServiceDetails tab="rum-overview" />,
+    breadcrumb: i18n.translate('xpack.apm.home.rumOverview.title', {
+      defaultMessage: 'Real User Monitoring',
+    }),
+    name: RouteName.RUM_OVERVIEW,
+  },
 ];
